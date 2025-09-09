@@ -5,7 +5,7 @@ import axios from "axios";
 const Positions = () => {
   const [allPositions , setAllPositions] = useState([]);
   useEffect(()=>{
-  axios.get("http://localhost:3001/allPositions").then((res)=>{
+  axios.get("https://stck-market-clone-backend-1.onrender.com/allPositions").then((res)=>{
     setAllPositions(res.data);
   })
 });
