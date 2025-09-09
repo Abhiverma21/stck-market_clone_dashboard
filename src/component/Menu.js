@@ -25,7 +25,7 @@ const Menu = () => {
             <p className={selectedMenu === 0 ? activeMenuClass : menuClass}>Dashboard</p></Link>
           </li>
           <li>
-          <Link style={{textDecoration:"none"}} to="/orders" onClick={()=> handleMenuLink(1)}>
+          <Link style={{textDecoration:"none"}} to="/allorders" onClick={()=> handleMenuLink(1)}>
           <p className={selectedMenu === 1 ? activeMenuClass : menuClass}>Orders</p></Link>
           </li>
           <li>
